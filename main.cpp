@@ -20,7 +20,7 @@ try {
     newController.displayInfo();
 
     return 0;
-} catch (const std::exception & e) {
+} catch (const std::invalid_argument & e) {
     std::cerr << e.what() << '\n';
     return -1;
 }
