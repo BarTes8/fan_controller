@@ -3,5 +3,5 @@
 
 class LcdDisplay {
 public:
-    void print(std::string message);
+    void print(const std::string& message);
 };
