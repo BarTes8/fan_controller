@@ -4,12 +4,12 @@ class Fan {
     int rpm = 0;
 
 public:
-    Fan();
-    Fan(const Fan&);
-    Fan(Fan&&);
+    //Fan() = default;
+    //Fan(const Fan&) = default;
+    //Fan(Fan&&) = default;
 
     void setSpeed(int newRpm);
-    int getSpeed();
-    bool disable();
-    bool enable();
+    int getSpeed() const;
+    //bool disable();
+    //bool enable();
 };
